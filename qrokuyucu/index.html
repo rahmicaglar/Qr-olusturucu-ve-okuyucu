@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Kod Üretici ve Okuyucu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>QR Kod Üretici ve Okuyucu</h1>
+
+        <!-- QR Kod Üretici -->
+        <div class="qr-section">
+            <div class="qr-generator">
+                <h2>QR Kod Üretici</h2>
+                <input type="text" id="qr-input" placeholder="Metin veya URL girin">
+                <button id="generate-btn">QR Kodu Oluştur</button>
+                <div id="qrcode"></div>
+            </div>
+        </div>
+
+        <!-- QR Kod Okuyucu -->
+        <div class="qr-section">
+            <div class="qr-reader">
+                <h2>QR Kod Okuyucu</h2>
+                <input type="file" id="qr-file" accept="image/*">
+                <div id="qr-result"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QRCode.js Kütüphanesi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <!-- qr-scanner.js Kütüphanesi -->
+    <script src="https://cdn.jsdelivr.net/npm/qr-scanner@1.2.0/qr-scanner.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
